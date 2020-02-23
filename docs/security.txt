@@ -1,0 +1,3 @@
+Contact: mailto:stefan@hagen.link
+Encryption: https://keybase.io/sthagen
+Preferred-Languages: en, de, fr
