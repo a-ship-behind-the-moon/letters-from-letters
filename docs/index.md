@@ -4,10 +4,12 @@ Idea: Use one representation of letters like A to generate another representatio
 
 That could be: 
 
-`letter(‘A‘)` yields 
+`letter(‘A‘)` yields maybe
 ```
     A
    A A  
   AAAAA  
  A     A 
 ```
+
+
