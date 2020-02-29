@@ -1,21 +1,9 @@
 """Letters from letters."""
+import json
 
-MAP = {
-    'A': ('''
-    A
-   A A  
-  AAAAA  
- A     A'''
-    ),
-    '?': ('''
-  ????
- ?    ?
-    ?
-    ?
-
-    ?'''
-    ),
-}
+DATA_PATH = 'letter_map.json'
+ENCODING = 'utf-8'
+MAP = json.load(open(DATA_PATH, encoding=ENCODING))
 
 
 def letter(char):
