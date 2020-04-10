@@ -17,9 +17,9 @@ def test_cli_map_ok():
     a, b, z = "A", "B", "Z"
     argv = ["ignore", a, b, z]
     m_a, m_b, m_z = cli.main(argv)
-    assert m_a == "B"
-    assert m_b == "C"
-    assert m_z == "?"
+    assert m_a == "\n    A  \n   A A   \n  AAAAA   \n A     A"
+    assert m_b == "\n BBBB  \n B    B  \n BBBB     \n B    B \n BBBB "
+    assert m_z == "\n  ???? \n ?    ?  \n    ?     \n    ?   \n       \n    ?   "
 
 
 def test_cli_random_seed_ok():
