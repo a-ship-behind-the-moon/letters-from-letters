@@ -15,6 +15,13 @@ random.shuffle(_VAP)
 RAP = {x: y for x, y in zip(list(string.ascii_letters), _VAP)}
 
 
+def is_2d(mapping=None):
+    """Does the layout require two dimensions?"""
+    if mapping is None:
+        mapping = MAP
+    return any("\n" in char for char in mapping.values())
+
+
 def letter(char):
     """Derive letter from char."""
     return MAP.get(char)
